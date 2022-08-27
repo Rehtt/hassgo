@@ -1,4 +1,4 @@
-package hass
+package hassgo
 
 type Plugins []Plugin
 

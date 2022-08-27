@@ -6,7 +6,7 @@
 package main
 
 import (
-	"github.com/Rehtt/hass"
+	"github.com/Rehtt/hassgo"
 	"log"
 )
 
@@ -17,7 +17,7 @@ var (
 )
 
 func main() {
-	ws, err := hass.Connect(url, origin, token)
+	ws, err := hassgo.Connect(url, origin, token)
 	if err != nil {
 		log.Panicln(err)
 	}

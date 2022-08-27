@@ -1,4 +1,4 @@
-package hass
+package hassgo
 
 func (w *WS) sendHandle(request func(id uint64) (data []byte), option ...func() (subType uint8, p Plugin)) ([]byte, error) {
 	ctx := w.newContext()

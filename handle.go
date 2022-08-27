@@ -1,10 +1,10 @@
-package hass
+package hassgo
 
 import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"hass/model"
+	"hassgo/model"
 	"log"
 )
 

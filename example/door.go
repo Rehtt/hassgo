@@ -22,14 +22,13 @@ type Result struct {
 }
 
 // 事件回调
-func (d *Door) SubscribeEventCallBack(ctx *hass.Func, data []byte) {
-
+func (d *Door) SubscribeEventCallBack(ctx *hassgo.Func, data []byte) {
 }
 
 // 触发器回调
-func (d *Door) SubscribeTriggerCallBack(ctx *hass.Func, data []byte) {
+func (d *Door) SubscribeTriggerCallBack(ctx *hassgo.Func, data []byte) {
 	// 3秒种后自动切换关门状态
-	go func(ctx *hass.Func) {
+	go func(ctx *hassgo.Func) {
 		time.Sleep(3 * time.Second)
 		service := mqtt.NewPublishService()
 		service.ServiceData.Topic = "stat/door/big"

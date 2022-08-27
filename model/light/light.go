@@ -1,7 +1,7 @@
 package light
 
 import (
-	"hass/model"
+	"hassgo/model"
 )
 
 type ServiceData struct {
