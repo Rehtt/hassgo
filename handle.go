@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"hassgo/model"
+	"github.com/Rehtt/hassgo/model"
 	"log"
 )
 

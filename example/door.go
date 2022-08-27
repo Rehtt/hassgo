@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/Rehtt/hassgo"
 	"github.com/Rehtt/hassgo/model"
 	"github.com/Rehtt/hassgo/model/light"
 	"github.com/Rehtt/hassgo/model/mqtt"
@@ -60,7 +61,7 @@ func (d *Door) SubscribeTriggerCallBack(ctx *hassgo.Func, data []byte) {
 }
 
 // 初始化
-func (d *Door) Init(f *hass.Func) {
+func (d *Door) Init(f *hassgo.Func) {
 	// 注册触发器事件，当switch.door从"off"变化到"on"时触发回调
 	f.SubscribeTrigger(map[string]any{
 		"platform":  "state",
@@ -71,7 +72,7 @@ func (d *Door) Init(f *hass.Func) {
 
 }
 
-func getStateByID(f *hass.Func, id string) (state string, lastChange time.Time, err error) {
+func getStateByID(f *hassgo.Func, id string) (state string, lastChange time.Time, err error) {
 	data, err := f.GetStates()
 	if err != nil {
 		return "", time.Time{}, err

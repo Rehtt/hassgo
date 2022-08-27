@@ -6,7 +6,7 @@
 package mqtt
 
 import (
-	"hassgo/model"
+	"github.com/Rehtt/hassgo/model"
 )
 
 type ServiceData struct {
