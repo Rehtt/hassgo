@@ -3,10 +3,9 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/Rehtt/hass"
-	"github.com/Rehtt/hass/model"
-	"github.com/Rehtt/hass/model/light"
-	"github.com/Rehtt/hass/model/mqtt"
+	"github.com/Rehtt/hassgo/model"
+	"github.com/Rehtt/hassgo/model/light"
+	"github.com/Rehtt/hassgo/model/mqtt"
 	"log"
 	"time"
 )

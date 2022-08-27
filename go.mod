@@ -1,4 +1,4 @@
-module github.com/Rehtt/hass
+module github.com/Rehtt/hassgo
 
 go 1.18
 
